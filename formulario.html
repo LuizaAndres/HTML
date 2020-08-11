@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORMULÁRIO HTML</title>
+    <meta charset="UTF-8/">
+</head>
+
+<body style="background-color:aqua">
+    <br>
+    <p style="background-color:black;color:white">Formulário</p>
+    <img src="imgs/cadastro.jpg" height="60px">
+    <form>
+        <fieldset>
+            <legend>Dados Principais</legend>
+            <label for="fname">Nome:</label><br>
+            <input type="text" id="nome" value="Kadu"><br>
+            <label for="lname">Sobrenome:</label><br>
+            <input type="text" id="nome" value="Floresta"><br>
+
+            <label for="dtaNascimento">Data de Nascimento:</label><br>
+            <input type="date" id="dtaNascimento"><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" required id="email"><br>
+
+            <label for="idade">Idade:</label><br>
+            <input type="number" required id="idade" max="100" min="18"><br>
+
+            <label for="senha">Senha:</label><br>
+            <input type="password" required id="senha"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Campos de seleção</legend>
+            <input type="checkbox" id="humor1"  name="humor1" value="Feliz">
+            <label for="humor1">Feliz da vida</label>
+            <br>
+            <input type="checkbox" id="humor2" name="humor2" value="Triste">
+            <label for="humor2">Tristão</label>
+            <br>
+            <input type="radio" id="masculino" name="genero" value="Masculino">
+            <label for="masculino">Masculino</label>
+            <br>
+            <input type="radio" id="feminino" name="genero" value="Feminino">
+            <label for="feminino">feminino</label>
+            <br>
+            <label for="objeto">Objetos</label>
+            <select id="objeto" name="objeto">
+                <option value="cama">Caminha</option>
+                <option value="pc">PC</option>
+                <option selected value="urso">Ursinho</option>
+            </select>
+            <br>
+            <label for="comodos">Comodos</label>
+            <input list="comodos">
+            <datalist id="comodos" name="comodos">
+                <option value="cozinha">Cozinha</option>
+                <option value="Quarto">Quarto</option>
+                <option value="Sala">Sala</option>
+            </datalist>
+            <br>
+        </fieldset>
+        
+        <br><input type="submit" style="background-color:blue;color:yellow" value="Salvar">
+        <input type="reset" style="background-color:blue;color:yellow" value="Cancelar">
+        
+    </form>
+
+    <br><a href="index.html">Voltar</a><br>
+</body>
+
+</html>
