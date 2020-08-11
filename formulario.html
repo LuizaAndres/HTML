@@ -14,9 +14,9 @@
         <fieldset>
             <legend>Dados Principais</legend>
             <label for="fname">Nome:</label><br>
-            <input type="text" id="nome" value="Kadu"><br>
+            <input type="text" id="nome" value="Nome"><br>
             <label for="lname">Sobrenome:</label><br>
-            <input type="text" id="nome" value="Floresta"><br>
+            <input type="text" id="nome" value="Sobrenome"><br>
 
             <label for="dtaNascimento">Data de Nascimento:</label><br>
             <input type="date" id="dtaNascimento"><br>
@@ -59,9 +59,21 @@
                 <option value="Sala">Sala</option>
             </datalist>
             <br>
+            <label for="descricao">Descrição</label>
+            <br>
+            <textarea id="descricao" name="descricao" rows="5" cols="30">
+            </textarea>
+            <br>
+            <script>
+                function ola(){
+                    alert('oooi');
+                }
+            </script>
+            <input type="button" value="Clique em mim" onclick="ola()">
         </fieldset>
         
-        <br><input type="submit" style="background-color:blue;color:yellow" value="Salvar">
+        <br>
+        <input type="submit" style="background-color:blue;color:yellow" value="Salvar">
         <input type="reset" style="background-color:blue;color:yellow" value="Cancelar">
         
     </form>
