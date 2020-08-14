@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de materiais</title>
+    <script>
+        function trocaItem(){
+            var nome = document.getElementById('nome').value;
+            var novo = document.getElementById('diplayItem');
+            novo.textContent=nome;
+        }
+    </script>
 </head>
 <body>
+    <a href="/tarefas/lista1/lista1.html"><h1>Voltar</h1></a>
     <h3>Cadastro de novos materiais de aula</h3>
     <fieldset>
         <legend>Lista de materiais ja cadastrados</legend>
@@ -31,7 +39,28 @@
         <label for="radioNao">Não</label><br>
 
         <input type="reset" value="Limpar">
-        <input type="submit" value="Cadastrar">
+        <input type="submit" value="Cadastrar" onclick="trocaItem()">
+    </fieldset>
+    <fieldset>
+        <legend>Dados do ultimo material cadastrado</legend>
+        <table border="1">
+            <tr style="background-color: white; color:black" text-align="left">
+            <th>Nome</th>
+            <td id="diplayItem">Lápis</td>
+        </tr>
+        <tr>
+            <th><b>Preço</b></th>
+            <td>R$ 12,50</td>
+        </tr>
+        <tr>
+            <th><b>Quantidade</b></th>
+            <td>200</td>
+        </tr>
+        <tr>
+            <th><b>Devolução</b></th>
+            <td>Sim</td>
+        </tr>
+        </table>
     </fieldset>
 </body>
 </html>

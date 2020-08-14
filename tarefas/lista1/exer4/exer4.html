@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body style= "background-color:rgb(94, 131, 250); color: white;">
+    <a href="/tarefas/lista1/lista1.html"><h1>Voltar</h1></a>
+    <h3><b>Cadastro de Estudantes</b></h3>
+        <fieldset>
+            <legend>Dados Escolares</legend>
+                <label form="escolaridade">Escolaridade:</label>
+                <select id="escolaridade" name="escolaridade">
+                    <option value="1ano">1º Ano</option>
+                    <option value="2ano">2º Ano</option>
+                    <option value="3ano">3º Ano</option>
+                    <option value="4ano">4º Ano</option>
+                    <option value="5ano">5º Ano</option>
+                </select><br>
+            
+            <input type="checkbox" id="materia1" name="materia1" value="Portugues">
+            <label for="materia1">Português</label><br>
+            <input type="checkbox" id="materia2" name="materia2" value="Matematica">
+            <label for="materia2">Matemática</label><br>
+
+            <label for="professores">Escolha seu professor</label>
+                <input list="professor">
+                <datalist id="professor">
+                    <option value="Juliana"></option>
+                    <option value="Cláudia"></option>
+                    <option value="Gabriel"></option>
+                    <option value="Marcio"></option>
+                    <option value="Vicente"></option>
+                    <option value="André"></option>
+                </datalist>
+                <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Descrição</legend>
+            <textarea id="descricao" name="descricao" rows="5" cols="20">Minha Descrição</textarea>
+            <br>
+        </fieldset>
+        <br>
+        
+        <input type="reset" style="background-color:rgb(219, 219, 219); color: black;" value="Limpar">
+        <input type="submit" style="background-color:rgb(219, 219, 219); color: black;" value="Cadastrar"><br>
+    </body>
+</html>

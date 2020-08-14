@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dados de clientes</title>
+    </head>
+    <body style="background-color: rgb(0, 190, 190);">
+        <a href="/tarefas/lista1/lista1.html"><h1>Voltar</h1></a>
+
+        <h1 style="color:black; text-align: center;">Clientes cadastrados</h1>
+
+        <table>
+            <tr style="background-color:black; color: white;" text-align="left">
+                <th>Cliente</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>E-mail</th>
+            </tr>
+            <tr style="background-color: rgb(0, 104, 189); color: white;" text-align="left">
+                <td>Ana Regina</td>
+                <td>29</td>
+                <td>Curitiba</td>
+                <td><b>Paraná</b></td>
+                <td>ana@gmail.com</td>
+            </tr>
+            <tr style="background-color:  rgb(0, 104, 189); color:white">
+                <td>Fernanda Silva</td>
+                <td>42</td>
+                <td>Joinville</td>
+                <td><b>Santa Catarina</b></td>
+                <td>fernanda@gmail.com</td>
+            </tr>
+            <tr style="background-color:  rgb(0, 104, 189); color:white">
+                <td>Rodrigo Ferreira</td>
+                <td>70</td>
+                <td>Curitiba</td>
+                <td><b>Paraná</b></td>
+                <td>rodrigo@gmail.com</td>
+            </tr>
+        </table>
+        <br>
+
+        <fieldset style=" background-color: rgba(0, 0, 0, 0.5); border-width: solid; border-color: rgb(0, 0, 0);">
+            <legend style="background-color: black; color: white;">Cadastrar novo cliente</legend>
+
+            <label for="nome" style="color: white;">Nome:</label>
+            <input type="text" required id="nome"><br>
+                
+            <label for="idade" style="color: white;">Idade:</label>
+            <input type="number" required id="idade" max="100" min="18"><br>
+
+            <label for="nome" style="color: white;">Cidade:</label>
+            <input type="text" required id="cidade"><br>
+
+            <label for="estado" style="color: white;">Estado:</label>
+                <input list="estado">
+                <datalist id="estado">
+                    <option value="Parana"></option>
+                    <option value="Santa Catarina"></option>
+                </datalist>
+            <br>
+            
+            <label for="email" style="color: white;">E-mail:</label>
+            <input type="text" required id="email"><br>
+            <br>
+            
+            <input type="reset" style="background-color: tomato; color: rgb(255, 255, 255); border: 0; width: 100px; height: 30px;" value="Cancelar">
+            <input type="submit" style="background-color: rgb(0, 119, 10); color: rgb(255, 255, 255); border: 0; width: 100px; height: 30px;" value="Salvar">
+        </fieldset>
+    </body>
+</html>
