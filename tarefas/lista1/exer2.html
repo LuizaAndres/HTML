@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de materiais</title>
+</head>
+<body>
+    <h3>Cadastro de novos materiais de aula</h3>
+    <fieldset>
+        <legend>Lista de materiais ja cadastrados</legend>
+        <ol>
+            <li>Lápis</li>
+            <li>Caneta</li>
+            <li>Papel</li>
+            <li>Tesoura</li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <legend>Cadastrar novo material</legend>
+        <input type="text" id="nome" value="Nome" style="color: gray;"><br>
+        <input type="text" id="preco" value="Preço" style="color: gray;"><br>
+
+        <label for="qtde">Quantidade: </label>
+        <input type="number" required id="qtde" max="100" min="0"><br>
+        
+        <label for="radio">Devolução: </label>
+        <input type="radio" id="radioSim" name="devolucao" value="sim">
+        <label for="radio_sim">Sim</label>
+        <input type="radio" id="radioNao" name="devolucao" value="nao">
+        <label for="radioNao">Não</label><br>
+
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Cadastrar">
+    </fieldset>
+</body>
+</html>
