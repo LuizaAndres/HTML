@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display</title>
+    <meta charset="UTF-8">
+ 
+    <meta name="description" content="Aula sobre display">
+    <meta name="author" content="Juliana Martins">
+ 
+    <style>
+ 
+        nav{
+            background-color: #263238;
+        }
+ 
+        body{
+            margin:0px;
+        }
+ 
+        .nav-links{
+            margin:0px;
+            padding-top:20px;
+            text-align: center;
+        }
+        
+        .nav-links > li{
+            display:inline-block;
+            height:50px;
+            background-color: #1976d2;
+            border: 1px solid #004ba0;
+            border-bottom: 0px;
+            border-radius: 4px 4px 0px 0px;
+            font-size:20px;
+        }
+ 
+        .nav-links li:hover, .nav-links .active{
+            background-color: #63a4ff;
+        }
+ 
+        .nav-links a{
+            line-height:50px;
+            text-decoration:none;
+            color: #FFF;
+            padding: 0 10px;
+            display: inline-block;
+ 
+        }
+        
+        .inactive-link{
+            background-color: #a5a9ab !important;
+            border-color: #9ea7aa !important;
+        }
+         
+    </style>
+ 
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Página Inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li class="inactive-link"><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+ 
+    <div class="content">
+  
+    </div>
+ 
+    <footer>
+        
+    </footer>
+ 
+</body>
+</html>
