@@ -1,0 +1,30 @@
+.cabeca{
+    width: 100%;
+    min-height: 70px;
+    color:white;
+    background-color: #120edd;
+}
+.corpo{
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    min-height: 70px;
+    clear: both;
+}   
+.coluna{
+    float: left;
+    margin-left: 1.15%;
+    margin-right: 1.15%;
+    width: 30%;
+    min-height: 70px;
+    background-color: #f64a16;
+    color:white; 
+}
+.pe{
+    position:relative;
+    width: 100%;
+    min-height: 50px;
+    color:white;
+    background-color: #120edd;
+    clear: both;
+}
