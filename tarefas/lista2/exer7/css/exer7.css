@@ -8,6 +8,7 @@
     width: 100%;
     background-image: url(/tarefas/lista2/exer7/imagensss/background-image.png);
     background-size: 200px;
+    
 }
 .imagem{
     background-image: url(/tarefas/lista2/exer7/imagensss/tag-img.jpg);
@@ -15,13 +16,14 @@
     width: 800px;
     height: 70vh;
     padding: 50px;
-    margin: 0 auto;
-    font-size: 50px;
+    position: absolute;
 }
 .texto{
-    font-size: 100px;
+    font-size: 35px;
     text-align: center;
     color: white;
+    position: absolute;
+    padding: 50px;
 }
 .pe{
     width: 100%;
@@ -31,5 +33,5 @@
     background-color: #120edd;
     text-align: center;
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
 }
