@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Exercicio 3</title>
+
+    <script>
+        var numeros = [1,2,8,4,5,54,65,3,7,9]
+        
+        function somaPar(numeros){
+            var soma = 0;
+            for (let i = 0; i < numeros.length; i++) {
+                if(numeros[i]%2==0){
+                   soma +=numeros[i];
+                }
+            }
+            return soma;
+        }
+
+        function primo(num){
+            for(let i = 2; i < num; i++){
+                if(num % i === 0) {
+                    return false
+                }
+            }
+            return true;
+        }
+
+        function somaPrimo(numeros){
+            var soma = 0;
+            for (let i = 0; i < numeros.length; i++) {
+                if(primo(numeros[i])){
+                    soma +=numeros[i];
+                }
+            }
+            return soma;
+        }
+
+        document.write("Soma de Pares: "+somaPar(numeros)+"<br>");
+        document.write("Soma de Primos: "+somaPrimo(numeros)+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
