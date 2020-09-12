@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 5</title>
+
+    <script>
+        var peso = [50,64,75,84,94,54,68,74,54,68];
+        var idade = [12,35,46,87,54,21,65,98,45,21];
+        var sexo = ["M","F","F","F","M","F","M","F","M","F"];
+        
+        function totalMedia(sexo,idade,peso,seletor){
+            var somaPeso = 0;
+            var somaIdade = 0;
+            var mediaIdade = 0;
+            var qtde = 0;
+
+            for (let i = 0; i < sexo.length; i++) {
+                if(sexo[i]===seletor){
+                    qtde++;
+                    somaPeso += peso[i];
+                    somaIdade += idade[i];
+                }
+            }
+            mediaIdade = somaIdade/qtde;
+
+            return [somaPeso,somaIdade,mediaIdade,qtde];
+        }
+        var homens = totalMedia(sexo,idade,peso,"M");
+        var mulheres = totalMedia(sexo,idade,peso,"F");
+
+        document.write(homens[3] + " quantidade de Homens <br> Peso: " + homens[0] + " - ");
+        document.write("Idade: " + homens[1] + " - ");
+        document.write("Media Idade: " + homens[2]+ "<br><br>");
+        document.write(mulheres[3] + " Mulheres <br> Peso: " + mulheres[0] + " - ");
+        document.write("Idade: " + mulheres[1] + " - ");
+        document.write("Media Idade: " + mulheres[2] + "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
