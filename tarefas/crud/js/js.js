@@ -2,7 +2,7 @@ var receita1 = {
     nomePaciente: "Leonardo",
     medicamento: 30,
     dose: "987654",
-    intervalo: "Senac",
+    intervalo: "Senacc",
     duracao: "Senac"
 };
 
