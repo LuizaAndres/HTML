@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var estudante1 = {nome:"Leonardo",matricula:"987654",instituicao:"SENAC"};
+        var estudante2 = {
+            nome:"Carlos",
+            matricula:"987654999",
+            instituicao:"SENAC"
+        };
+        debugger;
+        estudante2.instituicao = "Serviço Nacional do Comércio";
+ 
+        var estudante3 = new Object();
+ 
+        console.log(estudante1.nome);
+ 
+        function carregou(){
+            debugger;
+        }
+ 
+        function alterou(){
+            debugger;
+        }
+ 
+        function salvarNome(){
+            var inputNome = document.getElementById("nome");
+            var valorNome = inputNome.value;
+            if(valorNome == "juliana")
+                inputNome.style.backgroundColor = "green";
+            else
+                inputNome.style.backgroundColor = "red";
+            //alert(valorNome);
+            var divBox = document.getElementById("box");
+ 
+           // divBox.innerHTML = "<p>"+valorNome+"</p>";
+ 
+            var paragrafo = document.createElement("div");
+            paragrafo.innerText = valorNome;
+            paragrafo.style.backgroundColor = "pink";
+            divBox.appendChild(paragrafo);
+ 
+            debugger;
+        }
+ 
+        function limparConteudo(){
+            var divBox = document.getElementById("box");
+            divBox.innerHTML = "";
+        }
+        
+    </script>
+    <style>
+        #box{
+            width:200px;
+            height: 200px;
+            background-color:aquamarine;
+        }
+    </style>
+</head>
+<body onload="carregou()">
+    <div>
+        <input type="text" placeholder="Nome" id="nome" onchange="alterou()">
+        <input type="button" value="Clique" onclick="salvarNome()">
+    </div>
+    <div id="box" onmouseover="limparConteudo()">
+        Leonardo
+    </div>
+    
+</body>
+</html>
