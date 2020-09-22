@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Nova receita</title>
+    <link href="style/style.css" rel="stylesheet">
+    <script src="js/js.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Receita</h1>
+        </div>
+        <form class="cadastro">
+            <input class="inputText" type="text" id="nomePaciente" placeholder="Nome do Paciente">
+            <input class="inputText" type="text" id="medicamento" placeholder="Medicamento">
+            <input class="inputText" type="text" id="dose" placeholder="mg/Dose">
+            <input class="inputText" type="text" id="intervalo" placeholder="Intervalo horas">
+            <input class="inputText" type="text" id="duracao" placeholder="Duração dias">
+            <input class="inputButtonCadastrar" type="button" id="cadastrar" value="Cadastrar" onclick="adicionar()">
+            <input class="inputButtonLimpar" type="button" id="Limpar" value="Limpar" onclick="limparConteudo()">
+        </form>
+    </header>
+    <br>
+
+    <div class="cabecalho">
+        <table id="tabela">
+            <tr>
+                <th>#</th>
+                <th>Data</th>
+                <th>Paciente</th>
+                <th>Medicamento</th>
+                <th>Dose</th>
+                <th>Intervalo</th>
+                <th>Duração</th>
+                <th>Deletar</th>
+            </tr>
+    </table>
+    <br>
+</body>
+</html>
