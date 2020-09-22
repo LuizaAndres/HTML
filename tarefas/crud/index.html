@@ -1,42 +1,67 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
+<!doctype html>
+<html lang="pt-BR">
 
-    <title>Nova receita</title>
-    <link href="style/style.css" rel="stylesheet">
-    <script src="js/js.js"></script>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>MSS - Receitas</title>
 </head>
 
 <body>
-    <header>
-        <div class="titulo">
-            <h1>Receita</h1>
+    <nav class="navbar navbar-expand-md navbar-light bg-light"> <a class="navbar-brand" href="#">MSS</a> <button
+            class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"> <a class="nav-link" href="#">Home </a> </li>
+                <li class="nav-item"> <a class="nav-link active" href="#">Receitas(current)</a> </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0"> <label for="basic-url" style="padding:10px">cliente.nome</label>
+                <button id="logout" class="btn btn-outline-success my-2 my-sm-0" type="button">Logout</button> </form>
         </div>
-        <form class="cadastro">
-            <input class="inputText" type="text" id="nomePaciente" placeholder="Nome do Paciente">
-            <input class="inputText" type="text" id="medicamento" placeholder="Medicamento">
-            <input class="inputText" type="text" id="dose" placeholder="mg/Dose">
-            <input class="inputText" type="text" id="intervalo" placeholder="Intervalo horas">
-            <input class="inputText" type="text" id="duracao" placeholder="Duração dias">
-            <input class="inputButtonCadastrar" type="button" id="cadastrar" value="Cadastrar" onclick="adicionar()">
-            <input class="inputButtonLimpar" type="button" id="Limpar" value="Limpar" onclick="limparConteudo()">
-        </form>
-    </header>
-    <br>
-
-    <div class="cabecalho">
-        <table id="tabela">
-            <tr>
-                <th>#</th>
-                <th>Data</th>
-                <th>Paciente</th>
-                <th>Medicamento</th>
-                <th>Dose</th>
-                <th>Intervalo</th>
-                <th>Duração</th>
-                <th>Deletar</th>
-            </tr>
-    </table>
-    <br>
+    </nav>
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm"> Número </div>
+                <div class="col-sm"> Paciente </div>
+                <div class="col-sm"> Composto </div>
+                <div class="col-sm"> mg/dose </div>
+                <div class="col-sm"> doses/dia </div>
+                <div class="col-sm"> Dias de tratamento </div>
+                <div class="col-sm"> </div>
+            </div>
+            <div class="row">
+                <div class="col-sm"> list.lenght+1 </div>
+                <div class="col-sm"> <input class="form-control" type="text" id="inputNomePaciente" placeholder="Nome">
+                </div>
+                <div class="col-sm"> <input class="form-control" type="text" id="composto" placeholder="Composto"
+                        autocomplete="on"> </div>
+                <div class="col-sm"> <input class="form-control" type="text" id="dose" placeholder="mg/Dose"
+                        autocomplete="on"> </div>
+                <div class="col-sm"> <input class="form-control" type="text" id="intervalo"
+                        placeholder="Intervalo (horas)" autocomplete="on"> </div>
+                <div class="col-sm"> <input class="form-control" type="text" id="dias" placeholder="dias"
+                        autocomplete="on"> </div>
+                <div class="col-sm"> <input class="btn btn-outline-success my-2 my-sm-0" type="button" id="cadastrar"
+                        value="Cadastrar" onclick="adicionar()"> </div>
+            </div>
+        </div>
+    </div> <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
 </body>
+
 </html>
