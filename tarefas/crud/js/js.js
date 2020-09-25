@@ -15,6 +15,7 @@ var receita2 = {
 };
 
 function adicionar(){
+    alert(document.getElementById('NomePaciente').value)
     //html injection pra criar nova linha create element da aula passada
     //divBox.innerHTML = "<p>"+valorNome+"</p>";
     //pega a info do nome
