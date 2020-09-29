@@ -1,31 +1,68 @@
-var receita1 = {
-    nomePaciente: "Leonardo",
-    medicamento: 30,
-    dose: "987654",
-    intervalo: "Senacc",
-    duracao: "Senac"
-};
+var receitas = [];
 
-var receita2 = {
-    nomePaciente: "Leonardo",
-    medicamento: 30,
-    dose: "987654",
-    intervalo: "Senac",
-    duracao: "Senac"
-};
+//adiciona receita no array
 
 function adicionar(){
-    alert(document.getElementById('NomePaciente').value)
-    //html injection pra criar nova linha create element da aula passada
-    //divBox.innerHTML = "<p>"+valorNome+"</p>";
-    //pega a info do nome
-    var nome = document.getElementById('nomePaciente').value;
-    //seleciona o elemento alvo
-    var novo = document.getElementById('celulaNomePaciente');
-    //atribui valor seleionado no alvo
-    celulaNomePaciente.textContent=nomePaciente;
+    alert("");
+    
+    const idReceita = receitas.length + 1;
+    const nomePaciente = document.getElementById('nomePaciente').value;
+    const composto = document.getElementById('composto').value;
+    const dose = document.getElementById('dose').value;
+    const intervalo = document.getElementById('intervalo').value;
+    const dias = document.getElementById('dias').value;
+    
+    receitas.push({
+        idReceita,
+        nomePaciente,
+        composto,
+        dose,
+        intervalo,
+        dias,
+    })
+        
+    novaLinhaTabela();
+    limpaFormulario();
+        
+    console.log("Receita inserida");
+    console.log(receitas);
 }
 
+
+function novaLinhaTabela(){
+    const tabelaReceitas = document.getElementById("tabelaReceitas").getElementsByTagName('tbody')[0];
+
+    const novaLinha = tabelaReceitas.insertRow(tabelaReceitas.length);
+    receitas.forEach(receita => {
+        
+        const celulaID = novaLinha.insertCell(0);
+        celulaID.innerHTML = receita.idReceita;
+
+        const celulaNome = novaLinha.insertCell(1);
+        celulaNome.innerHTML = receita.nomePaciente;
+
+        const celulaComposto = novaLinha.insertCell(2);
+        celulaComposto.innerHTML = receita.composto;
+        
+        const celulaMg = novaLinha.insertCell(3);
+        celulaMg.innerHTML = receita.dose;
+        
+        const celulaIntervalo = novaLinha.insertCell(4);
+        celulaIntervalo.innerHTML = receita.intervalo;
+
+        const celulaDias = novaLinha.insertCell(5);
+        celulaDias.innerHTML = receita.dias;
+
+
+        const celulaAcao = novaLinha.insertCell(6);
+        
+        celulaAcao.innerHTML = '<button>Remover</button> <button onclick="editar">Editar</button>'
+    })
+    update_table();
+    
+    clear_form();
+    console.log(receitas);
+}
 function excluir(id){
     
 }
